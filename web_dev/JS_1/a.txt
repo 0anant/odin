@@ -1,0 +1,3 @@
+my name is Praveen 
+and i make ai agents and full stack apps
+alongside automations workflows
