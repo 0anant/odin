@@ -3,7 +3,8 @@ js basics
 js i/o ops
 js synchronous
 js async
-classes in js
+classes in js //Introduced how to create a class and use it -hard(new)
+we used some JS provided classes (map, Date)
 revise callbacks
 Promisess
 Async await

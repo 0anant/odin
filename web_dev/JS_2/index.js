@@ -6,3 +6,5 @@ const firstName  = map.get('name');
 console.log(firstName);
 const age = map.get('age');
 console.log(age);
+
+
