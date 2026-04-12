@@ -3,3 +3,7 @@ js basics
 js i/o ops
 js synchronous
 js async
+classes in js
+revise callbacks
+Promisess
+Async await
