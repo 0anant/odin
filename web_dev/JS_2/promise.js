@@ -26,7 +26,8 @@
 
 // waitFor3S(main);
 
-function random(){
+function random(resolve){
+   setTimeout(resolve, 3000);
      
 }
 let p = new Promise(random);
