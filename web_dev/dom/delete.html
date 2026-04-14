@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete-todo</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <h4>Go to school</h4>
+    <h4>Go to Tuition</h4>
+    <h4>Go to Gym</h4>
+    <button onclick="deleterandomTodo()">Update todo!!</button>
+    <input type="text" placeholder="type Todo">
+    <button onclick="addTodo()">Add Todo</button>
+</body>
+<script>
+    function deleterandomTodo(){
+        const element = document.querySelector('h4');
+        const parent = element.parentNode;
+        parent.removeChild(element);
+    }
+    function addTodo(){
+        const val1 = document.querySelector('input').value;
+        let ned = document.querySelector('body').appendChild;
+        ned.innerHTML = val1;
+    }
+</script>
+</html>
