@@ -16,7 +16,7 @@
 let ctr = 0;
 function callback(){
     ctr++;
-    document.querySelector('h5').innerHTML = ctr;
+    document.querySelectorAll('h4')[1].innerHTML = ctr + '. Go to gym!!';
 }
 
 setInterval(callback,1000);
