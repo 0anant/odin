@@ -8,3 +8,10 @@ we used some JS provided classes (map, Date)
 revise callbacks
 Promisess
 Async await
+DOM manipulation
+create node
+delete node
+appendChild
+createElement
+querySelector
+QuerySelectorAll
