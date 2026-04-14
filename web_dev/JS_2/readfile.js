@@ -9,8 +9,8 @@ function rad(resolve){
 
 let r = new Promise(rad);
 
-function callback(){
-    console.log("file is read");
+function callback(data){
+    console.log(data);
     
 }
 r.then(callback);
