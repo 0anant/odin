@@ -20,10 +20,13 @@
         const parent = element.parentNode;
         parent.removeChild(element);
     }
+    let ctr = 1;
     function addTodo(){
+        let newELement = document.createElement('h4');
         const val1 = document.querySelector('input').value;
-        let ned = document.querySelector('body').appendChild;
-        ned.innerHTML = val1;
+        newELement.innerHTML =  ctr + val1;
+        document.querySelector('body').appendChild(newELement);
+        ctr++;
     }
 </script>
 </html>
