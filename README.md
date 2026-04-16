@@ -1,1 +1,1 @@
-# langchain_genai
+###This repo contains all the learning, notes , practised codes which is done during my studying of web development particularly these resources are from The Odin Notebook and a full stack web development bootcamp from 100xDevs.

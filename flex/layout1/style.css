@@ -1,0 +1,23 @@
+.first-container {
+  display: flex;
+  background: light blue;
+  border: 4px solid blue;
+}
+
+.first-container div {
+  background: peachpuff;
+  border: 4px solid brown;
+  height: 100px;
+  width: 33.33px
+  padding: 20px;
+  flex: 1;
+}
+
+.two-container {
+  display: flex;
+}
+
+.two {
+    flex:1;
+    
+}
