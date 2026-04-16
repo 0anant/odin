@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  border: 1px solid black;
+}
+
+.hero-section {
+  display: flex;
+  background: lightgrey;
+}
+
+.hero-section .one {
+  border: 1px solid black;
+}
+
+.hero-section .two {
+  border: 1px solid black;
+}
+.middle {
+  display: flex;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+}
