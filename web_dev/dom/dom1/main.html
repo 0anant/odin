@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" name="" id="">
+    <button onclick="addTodo()">add todo</button>
+    <button onclick="deleteFirstTodo()">DeleteFirstTodos</button>
+    <button onclick="deleteLastTodo()">DeleteLastTodo</button>
+    <div id="todos"></div>
+</body>
+    <script>
+        let todos = [];
+        let ctr = 0;
+        function addTodo(){
+            todos.push({
+                title: document.querySelector('input').value
+            })
+            render();
+        }
+
+        function deleteFirstTodo(){
+            todos.splice(0,1);
+            render();
+            
+        }
+
+        function deleteLastTodo(){
+            todos.splice(todos.length-1, 1);
+            render();
+        }
+        function deleteTodoAt(index){
+            todos.splice(index,1);
+            render();
+        }
+
+        function createComponent(todo ,index){
+            const div = document.createElement('div');
+            const h2 = document.createElement('h2');
+            const button = document.createElement('button');
+
+            button.innerHTML = "Delete";
+            button.setAttribute("onclick", "deleteTodoAt(' + index + ')");
+            h2.innerHTML = todo.title;
+
+            div.appendChild(h2);
+            div.appendChild(button);
+
+            return div;
+        }
+
+        //react
+        function render(){
+            document.querySelector('#todos').innerHTML = "";
+            for(let i = 0; i <= todos.length; i++){
+                const element = createComponent(todos[i], i);
+                document.querySelector('#todos').appendChild(element);
+            }
+
+               
+        }
+
+    </script>
+</html>
