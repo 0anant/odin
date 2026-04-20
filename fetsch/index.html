@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Linkedin
+    <img src="" alt="">
+    <p></p>
+    <script>
+        async function getRecentPost() {
+            const res = await fetch("https://dog.ceo/api/breeds/image/random");
+            const data = await res.json();
+            
+            console.log(data);
+            document.querySelector('img').src = data.message;
+            document.querySelector('p').innerHTML = data.status;
+            console.log("request has been processed");
+        }
+        getRecentPost();
+    </script>
+</body>
+</html>
