@@ -19,7 +19,7 @@
             document.querySelector('p').innerHTML = data.status;
             console.log("request has been processed");
         }
-        getRecentPost();
+        setInterval(getRecentPost, 3000);
     </script>
 </body>
 </html>
