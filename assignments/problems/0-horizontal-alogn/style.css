@@ -1,7 +1,14 @@
 div {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-div section {
+div div h1 {
   background-color: red;
+  /* justify-content: center; */
+  width: 120px;
+  /* align-items: center; */
+  /* align-content: space-around; */
+  /* align-self: center; */
 }
