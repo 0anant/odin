@@ -13,7 +13,7 @@ const style = { width: 200, backgroundColor: "white", borderRadius: 10, borderCo
 function PostComponent() {
   return <div style={style}>
     <div style={{display: "flex"}}>
-      <img src="src/assets/react.svg" style={{
+      <img src="src/assets/vite.svg" style={{
         width: 30,
         height: 30,
         borderRadius: 20
